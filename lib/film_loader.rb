@@ -3,7 +3,7 @@ require 'net/http'
 require 'nokogiri'
 
 class FilmLoader
-  def self.from_url(url = "https://www.kinopoisk.ru/top/lists/1/filtr/all/sort/order/perpage/100/page/1/")
+  def self.from_url(url)
     uri = URI.parse(url)
     response = Net::HTTP.get(uri).encode("utf-8", "windows-1251")
 

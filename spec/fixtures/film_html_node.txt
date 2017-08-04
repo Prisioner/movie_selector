@@ -1,0 +1,84 @@
+<tr id="tr_2360" >
+                                <td valign="top" style="width: 64px; padding: 28px 0 28px 30px">
+                                    <div id="film2360"></div>
+                                    <div class="num rangImp">7</div>
+                                    <div class="poster">
+                                        <a href="/film/2360/"><img class="flap_img" src="https://st.kp.yandex.net/images/spacer.gif" title="/images/sm_film/2360.jpg" style="width: 52px; border: 3px solid #ccc" alt="Король Лев (The Lion King1994)" /></a>
+                                        <script type="text/javascript">
+                                            $(function(){
+                                                var root = $('#tr_2360').find('.poster');
+                                                $.popupTrailer({
+                                                    fid: 2360,
+                                                    appendTo: root,
+                                                    clickTo: root.find('a, img')
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                    <div class="flags"><div style="float: left; margin: 0 2px 5px 0" class="flag flag1"><a href="/lists/m_act%5Bcountry%5D/1/" title="США"></a></div></div>
+                                </td>
+                                <td valign=top class=news style="padding: 28px 0 28px 10px">
+                                    <div style="margin-bottom: 9px"><a style="font-size: 13px; font-weight: bold" href="/film/2360/" class="all">Король Лев</a><span style="color: #888; font-family: arial; font-size: 11px; display: block">The Lion King (1994) <nobr>88 мин.</nobr></span></div>
+                                    <span class="gray_text">
+            США,
+            <i>реж. <a class="lined" href="/name/7313/">Роджер Аллерс</a>...</i><br />
+            (мультфильм, мюзикл, драма...)
+        </span>
+                                    <span class="gray_text"><a class="lined" href="/name/10968/">Мэттью Бродерик</a>, <a class="lined" href="/name/33061/">Джереми Айронс</a>, <a class="lined" href="/film/2360/cast/#actor">...</a></span>
+                                    <span class="gray_text"></span>
+
+
+                                </td>
+                                <td style="width: 225px; vertical-align: top; padding-top: 28px">
+                                    <div class="WidgetStars" style="height: 35px; width: 225px; position: relative;" id="film_votes_2360" value="8.775"></div>
+                                    <script type="text/javascript">
+                                        $(function(){
+                                            KP.Stars.widget({
+                                                divcontainer:"#film_votes_2360",
+                                                rating:8.775,
+
+                                                guest:true,
+
+                                                user_code:'d5235bfb809e0647aaf6e8088ae9460c',
+                                                filmId:2360,
+                                                filmName:'Король Лев'
+                                            });
+                                        });
+                                    </script>
+
+
+                                    <div class="ratingBlock  ratingGreenBG">
+                                        <span class="all" style="color: #fff; cursor:default;">8.775 <span style="font-size: 10px">(279&nbsp;377)</span></span>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div style="color: #f60; font-family: arial; position: absolute; margin: 51px 0 0 118px">8.767</div>
+
+
+
+
+                                    <div style="color: #777; position: absolute; margin: 12px 0 0 118px">IMDb: 8.50<small style="display: block; margin-top: -1px">701&nbsp;986</small></div>
+
+                                    <div id="user_vote_2360" style="background: #f60; width: 23px; height: 19px; color: #fff; text-align: center; display: none; position: absolute; margin: 12px 0 0 186px; padding-top: 4px">
+                                        <!-- <a href="" class="all" style="color: #fff"></a> -->
+                                        <p class="all" style="margin: 1px 0 0 0; color: #fff;"></p>
+                                    </div>
+                                    <div class="eye" title="фильм просмотрен" id="film_eye_2360"></div>
+
+                                    <div class="MyKP_Folder_Select shortselect" id="MyKP_Folder_2360" data="film" style=""></div>
+                                </td>
+                            </tr>

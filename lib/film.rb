@@ -8,7 +8,7 @@ class Film
     film_data[:title] = html_node.search("a[@class='all']").text
 
     link = html_node.search("a[@class='all']").attribute("href").value
-    film_data[:link] = "https://kinopoisk.ru#{link}"
+    film_data[:link] = "https://www.kinopoisk.ru#{link}"
 
     year_length = html_node.search("div[@style='margin-bottom: 9px']").text
     film_data[:year] = year_length.match(/\d{4}/)[0].to_i
