@@ -14,7 +14,7 @@ class Film
     film_data[:year] = year_length.match(/\d{4}/)[0].to_i
     film_data[:length] = year_length.match(/\d+ мин\./).to_s
 
-    # ["США," "<i>реж. Фрэнк Дарабонт", "(драма, криминал)"]
+    # ["США," "реж. Фрэнк Дарабонт", "(драма, криминал)"]
     country_director_genre = html_node.search("span[@class='gray_text']")[0].text.strip.split("\n").map(&:strip)
     film_data[:country] = country_director_genre[0].chomp(",").chomp("...")
     film_data[:director] = country_director_genre[1][5..-1].chomp("...")
