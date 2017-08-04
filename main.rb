@@ -16,20 +16,28 @@ require_relative 'lib/film_loader'
 require_relative 'lib/user_io'
 
 user_io = UserIO.new
-films = []
 
-loop do
-  page = rand(1..5)
-  url = "https://www.kinopoisk.ru/top/lists/1/filtr/all/sort/order/perpage/100/page/#{page}/"
+user_io.output("\n", "Программа «Фильм на вечер»\n", "Формируем список фильмов...")
 
-  # Данные кэшируются, если возникнет необходимость сделать доп. заход
-  # films[page] ||= [<#Film >, <#Film >, ...]
-  films[page] ||= FilmLoader.from_url(url)
+page = rand(1..10)
+url = "https://www.kinopoisk.ru/top/lists/1/filtr/all/sort/order/perpage/50/page/#{page}/"
+films_arr = FilmLoader.from_url(url)
 
-  user_io.output("\n\n", "Предлагаю сегодня посмотреть:", films[page].sample)
+# Группируем по режиссёрам
+films = films_arr.group_by { |film| film.film_director }
 
-  choice = user_io.input("Смотрим? (y/n)")
-  break if choice.downcase == 'y'
+directors_list = films.keys.map.with_index { |director, index| "#{index + 1}. #{director}" }.join("\n")
+
+user_io.output(nil, directors_list)
+
+user_choice = 0
+until user_choice.between?(1,films.keys.size)
+  user_choice = user_io.input("Фильм какого режиссёра Вы бы хотели посмотреть? (укажите номер из списка)")
+  user_choice = user_choice.to_i
 end
 
-user_io.output(nil, "Желаем приятного просмотра!")
+# Определяем выбранного режиссёра и случайный фильм
+director = films.keys[user_choice - 1]
+film = films[director].sample
+
+user_io.output("\n", "Рекомендуем к просмотру:", film, "Желаем приятного просмотра!")
